@@ -11,7 +11,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
         <style>
-                        * {
+            * {
                 margin: 0;
                 padding: 0;
                 font-family: 'Outfit', sans-serif;
@@ -108,6 +108,7 @@
             #second-block {
                 background-color: rgb(187, 208, 243);
                 padding: 60px 0;
+                margin: auto;
             }
 
             #logo h1 {
@@ -120,7 +121,7 @@
                 font-family: 'Birthstone', cursive;
                 font-size: 1.2em;
                 color: rgb(188, 238, 255);
-                cursor: pointer;
+              cursor: pointer;
             }
 
             #main-doc {
@@ -148,6 +149,7 @@
 
             .project-block {
                 margin: 40px;
+                white-space: nowrap;
             }
 
             .project-block a {
@@ -170,7 +172,7 @@
             }
 
             .paragraph-doc {
-                width: 60%;
+                width: 70%;
                 margin: auto;
                 text-align: center;
             }
@@ -203,6 +205,10 @@
                     position: absolute;
                     top: 86px;
                 }
+                #foot p {
+                    font-size: 0.7em;
+                    transition: all 200ms;
+                }
             }
 
             @media (max-width: 648px) {
@@ -219,12 +225,9 @@
                     transition: all 300ms;
                 }
 
-                #second-block {
-                    width: 90%;
-                }
             }
 
-            @media (max-width: 568px) {
+            @media (max-width: 588px) {
                 #navbar ul li {
                     display: flex;
                     justify-content: center;
@@ -237,7 +240,7 @@
                 }
 
                 #head-doc {
-                    height: 276px;
+                    height: 224px;
                     position: absolute;
                 }
 
@@ -247,8 +250,22 @@
                 }
 
                 #first-block {
-                    height: 400px;
+                    height: 300px;
                     transition: all 300ms;
+                }
+              
+              .project-block {
+                margin: 40px 0;
+                white-space: nowrap;
+              }              
+              
+                #foot {
+                    position: relative;
+                    top: 120px;
+                }
+                #foot p {
+                    font-size: 0.7em;
+                    transition: all 200ms;
                 }
             }
         </style>
