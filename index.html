@@ -120,6 +120,7 @@
                 font-family: 'Birthstone', cursive;
                 font-size: 1.2em;
                 color: rgb(188, 238, 255);
+                cursor: pointer;
             }
 
             #main-doc {
@@ -255,8 +256,13 @@
     <body>
         <header id="head-doc">
             <div id="logo">
-                <h1><span>SUTTIRAK</span></h1>
+                <h1><span onclick="refresh()">SUTTIRAK</span></h1>
             </div>
+            <script>
+                function refresh(){
+                    location.reload(true);
+                }
+            </script>
             <nav id="navbar">
                 <ul>
                     <li><a href="#home">Home</a></li>
