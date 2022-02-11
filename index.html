@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Suttirak - Personal Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+        <style>
+                        * {
+                margin: 0;
+                padding: 0;
+                font-family: 'Outfit', sans-serif;
+                scroll-behavior: smooth;
+            }
+
+            body {
+                position: relative;
+                min-height: 100vh;
+                overflow-x: hidden;
+            }
+
+            #navbar ul li {
+                list-style: none;
+                font-size: 1.5em;
+                display: inline-block;
+                position: relative;
+                top: 10px;
+            }
+
+            #navbar ul li a {
+                padding: 30px;
+                text-decoration: none;
+                color: white;
+                transition: all 200ms;
+            }
+
+            #navbar ul li a:hover {
+                color: rgb(60, 151, 255);
+                background-color: whitesmoke;
+                transition: all 200ms;
+            }
+
+            #button {
+                text-decoration: none;
+                background-color:rgb(60, 151, 255);
+                font-size: 1.2em;
+                color: white;
+                padding: 12px 16px;
+                border-radius: 33px;
+                transition: all 200ms;
+            }
+
+            #button:hover {
+                background-color: rgb(0, 59, 122);
+                transition: all 200ms;
+            }
+
+            #head-doc {
+                display: flex;
+                justify-content: space-around;
+                background-color: rgb(60, 151, 255);
+                padding: 18px 0;
+                position: fixed;
+                width: 100%;
+                z-index: 1;
+            }
+
+            #first-block {
+                height: 250px;
+                transition: all 300ms;
+                padding-top: 100px;
+                position: relative;
+                bottom: 100px;
+                background: linear-gradient(rgb(0, 43, 112), rgb(0, 59, 122));
+                color: white;
+            }
+
+            .clearfix {
+                padding: 40px 0;
+            }
+
+            .link-about-me {
+                text-align: center;
+            }
+
+            .link-about-me button {
+                border: none;
+                background-color:rgb(60, 151, 255);
+                font-size: 1.25em;
+                color: white;
+                padding: 12px 16px;
+                border-radius: 33px;
+                transition: all 200ms;
+                cursor: pointer;
+                margin-bottom: 30px;
+            }
+
+            .link-about-me button:hover {
+                background-color: rgb(0, 59, 122);
+                transition: all 200ms;
+            }
+
+            #second-block {
+                background-color: rgb(187, 208, 243);
+                padding: 60px 0;
+            }
+
+            #logo h1 {
+                color: white;
+                font-family: "Century Gothic";
+                cursor: default;
+            }
+
+            #logo h1 > span {
+                font-family: 'Birthstone', cursive;
+                font-size: 1.2em;
+                color: rgb(188, 238, 255);
+            }
+
+            #main-doc {
+                position: relative;
+                top: 180px;
+            }
+
+            #second-para, #third-para {
+                display: none;
+            }
+
+            #first-para {
+                display: block;
+                transition: all 200ms;
+            }
+
+            .block-doc {
+                margin-bottom: -20px;
+            }
+
+            .block-doc h1 {
+                text-align: center;
+                font-size: 3em;
+            }
+
+            .project-block {
+                margin: 40px;
+            }
+
+            .project-block a {
+                text-decoration: none;
+                background-color:rgb(60, 151, 255);
+                color: white;
+                padding: 12px 16px;
+                border-radius: 33px;
+                transition: all 200ms;
+            }
+
+            .project-block a:hover {
+                background-color: rgb(0, 59, 122);
+                transition: all 200ms;
+            }
+
+            .block-doc hr {
+                width: 70%;
+                margin: 20px auto;
+            }
+
+            .paragraph-doc {
+                width: 60%;
+                margin: auto;
+                text-align: center;
+            }
+
+            #foot {
+                margin-top: 200px;
+                background-color: rgb(60, 151, 255);
+                text-align: center;
+                height: 80px;
+                width: 100%;
+                clear: both;
+                position: absolute;
+                left: 0;
+                padding-top: 30px;
+                font-size: 1.5em;
+                color: white;
+            }
+
+            @media (max-width: 832px) {
+
+                #logo {
+                    text-align: center;
+                }
+
+                #head-doc {
+                    height: 120px;
+                }
+
+                #navbar {
+                    position: absolute;
+                    top: 86px;
+                }
+            }
+
+            @media (max-width: 648px) {
+                #navbar ul li {
+                    font-size: 1.2em;
+                }
+
+                #head-doc {
+                    height: 114px;
+                }
+
+                #first-block {
+                    height: 300px;
+                    transition: all 300ms;
+                }
+
+                #second-block {
+                    width: 90%;
+                }
+            }
+
+            @media (max-width: 568px) {
+                #navbar ul li {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                #navbar ul li a {
+                    text-align: center;
+                    width: 568px;
+                    padding: 15px 30px;
+                }
+
+                #head-doc {
+                    height: 276px;
+                    position: absolute;
+                }
+
+                #main-doc {
+                    position: relative;
+                    top: 360px;
+                }
+
+                #first-block {
+                    height: 400px;
+                    transition: all 300ms;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header id="head-doc">
+            <div id="logo">
+                <h1><span>SUTTIRAK</span></h1>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#my-projects">My Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="home"></div>
+        <main id="main-doc">
+            <section class="block-doc">
+                <div id="first-block">
+                    <h1>Welcome to Suttirak's Portfolio</h1><br>
+                    <article class="paragraph-doc">
+                        <h2>This is my personal portfolio used to collect my projects that I practically create to approve for my web development skills.</h2>
+                    </article>
+                </div>
+            </section>
+            
+            <div id="about-me" class="clearfix"></div>
+
+            <!-- Create three paragraph buttons -->
+
+            <div class="link-about-me">
+                <button onclick="showAboutMe()">About Me</button>
+                <button onclick="showCerts()">Certifications</button>
+                <button onclick="showAchieve()">Other Achievements</button>
+            </div>
+            <br>
+            <section class="block-doc" id="first-para">
+                <h1>About Me</h1><hr>
+                    <article class="paragraph-doc">
+                    <h2>My name is Suttirak Charoenrajabhakdi. I graduated from Assumption University in Business Administration in Marketing field. I have experience working as an account executive. This was the first job that I worked in a related field. It was tough that I had to land my first job during COVID-19 and worked from home, but I have learned how to use my computer skills such as using MS Office and how to work as a team.</h2><br>
+                    <h2>During my study at a university, I took courses, especially computer skill courses such as coding in HTML, CSS, and JavaScript, although I did not study IT or Computer Science. The online platforms that I have taken coding courses are freeCodeCamp, Pirple, Codecademy, Sololearn, etc. I have taken a high effort to learn coding and built some projects such as BMI calculator, Temperature Converter, to improve coding skills. My projects are listed on my websites, you can click on "My Projects" and try them.</h2>
+                </article>
+            </section>
+            <section class="block-doc" id="second-para">
+                <h1>Certifications</h1><hr>
+                    <article class="paragraph-doc">
+                        <div class="cert">
+                            <h2>Coding for Marketers - Sololearn</h2>
+                            <h3>September 2021</h3>
+                        </div>
+                        <br>
+                        <div class="cert">
+                            <h2>Fundamentals of Digital Marketing - Google Digital Garage</h2>
+                            <h3>September 2021</h3>
+                        </div>
+                        <br>
+                        <div class="cert">
+                            <h2>Responsive Web Design - freeCodeCamp</h2>
+                            <h3>March 2021</h3>
+                        </div>
+                        <br>
+                        <div class="cert">
+                            <h2>HTML and CSS Frontend Fundamentals - Pirple</h2>
+                            <h3>October 2020</h3>
+                        </div>
+                </article>
+            </section>
+            <section class="block-doc" id="third-para">
+                <h1>Other Achievements</h1><hr>
+                <article class="paragraph-doc">
+                    <div class="achievements">
+                        <h2>Completion of English Programme Award - Kumon</h2>
+                        <h3>2014</h3>
+                    </div>
+                    <br>
+                    <div class="achievements">
+                        <h2>HSK4 Exam (Test of Chinese Proficiency)</h2>
+                        <h2>Score: 255/300</h2>
+                        <h3>June 2021</h3>
+                    </div>
+                    <br>
+                    <div class="achievements">
+                        <h2>EF SET Certificate</h2>
+                        <h2>Score: 55/100 (B2 Upper Intermediate)</h2>
+                        <h3>January 2022</h3>
+                    </div>
+                </article>
+            </section>
+
+            <!-- JavaScript is required because I provide three paragraphs, which will be shown in each part -->
+            <script>
+                var first_para = document.getElementById("first-para");
+                var second_para = document.getElementById("second-para");
+                var third_para = document.getElementById("third-para");  
+
+                function showAboutMe(){
+                    second_para.style.display = "none";
+                    third_para.style.display = "none";
+                    first_para.style.display = "block";
+                }
+
+                function showCerts(){
+                    first_para.style.display = "none";
+                    third_para.style.display = "none";
+                    second_para.style.display = "block";
+                }
+                
+                function showAchieve(){
+                    first_para.style.display = "none";
+                    second_para.style.display = "none";
+                    third_para.style.display = "block";
+                }
+
+            </script>
+
+            <div id="my-projects" class="clearfix"></div>
+
+            <section class="block-doc" id="second-block">
+                <article class="paragraph-doc">
+                    <h1>My Projects</h1><hr>
+                    <article class="paragraph-doc">
+                    <h2>These projects are created using VS Code. You can try using them.</h2><br>
+                    <div class="project-tile">
+                        <h3 class="project-block">
+                            <a href="https://cdpn.io/pen/debug/vYyRJVv?authentication_hash=WPMLYbPBaGPr" target="_blank">BMI Calculator</a>
+                        </h3>
+                        <h3 class="project-block">
+                            <a href="https://cdpn.io/pen/debug/rNWdgvK?authentication_hash=XBkGRNKBzVZA" target="_blank">
+            Temperature Converter</a>
+                        </h3>
+                        <h3 class="project-block">
+                            <a href="https://cdpn.io/pen/debug/LYjoPQm?authentication_hash=yPAJjbPBzbPA" target="
+_blank">Magic Eight Ball</a>
+                        </h3>
+                        <h3 class="project-block">
+                            <a href="https://cdpn.io/pen/debug/wvoeMWy?authentication_hash=VGrWNoDKmjzM" target="
+_blank">Job Application Form</a>
+                        </h3>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer id="foot">
+            <p>HOPE YOU CAN ENJOY MY WEBSITE, THANK YOU FOR VISITING.</p>
+            Created by Suttirak C.
+        </footer>
+    </body>
+</html>
