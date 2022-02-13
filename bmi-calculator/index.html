@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BMI calculator</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <header id="head">
+            <h1>Welcome to BMI Index Calculator</h1>
+        </header>
+        <main>
+            <h2>Please enter your weight and height below.</h2>
+            <form id="calculatorBMI" name="calculatorBMI">
+                <label for="weight">Weight (kilograms)</label>
+                    <input id="weight" name="weight" size="5"><br><br>
+                <label for="height">Height (centimetres) </label>
+                    <input id="height" name="height" size="5"><br><br>
+                <button type="button" onclick="bodyMassIndex()">Check your BMI</button>
+                <button type="button" onclick="resetResult()">Reset</button>
+            </form>
+            <div class="resultBMI">
+                <p class="resultBMI">Your BMI: <span id="valuetest"></span></p>
+                <p class="resultBMI">Result: <span id="valueResult"></span></p>
+            </div>
+
+            <!-- The table below is the format of results in BMI index -->
+
+            <div id="valuelist">
+                <h2>BMI Categories</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="obese">
+                            <td>&gt; 30</td>
+                            <td>Obese</td>
+                        </tr>
+                        <tr class="overweight">
+                            <td>25 - 29.9</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr class="normal">
+                            <td>18.5 - 24.9</td>
+                            <td>Normal</td>
+                        </tr>
+                        <tr class="underweight">
+                            <td>&lt; 18.5</td>
+                            <td>Underweight</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <footer id="foot">
+            <p>The purpose of this page is for an experiment only.</p>
+            <p>Created by Suttirak</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

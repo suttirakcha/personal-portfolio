@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  
+  * {
+    font-family: 'Montserrat';
+  }
+  
+  body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #head {
+    background-color: rgb(24,24,24);
+    color: grey;
+    clear: both;
+    position: relative;
+    height: 100px;
+    bottom: 21px;
+  }
+
+  #foot {
+    background-color: rgb(24,24,24);
+    color: grey;
+    position: fixed;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+  }
+
+  main {
+    padding-bottom: 150px;
+  }
+  
+  #head h1 {
+    position: relative;
+    top: 30px;
+  }
+  
+  table {
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(180deg, rgb(255, 60, 0), darkorange, yellow, greenyellow);
+    font-size: 1.2em;
+  }
+  
+  label, input, button {
+    font-size: 1.1em;
+  }
+  
+  input#weight, input#height {
+    border-radius: 5px;
+    border: 2px solid rgb(160,160,160);
+    padding: 3px;
+  }
+  
+  button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: rgb(96,96,96);
+    color: white;
+    transition: background-color 400ms;
+    box-shadow: 2px 4px 10px grey;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgb(24,24,24);
+    transition: background-color 400ms;
+  }
+  
+  .resultBMI {
+    font-size: 1.3em;
+  }
+  
+  div.resultBMI {
+    border: 1px solid white;
+    border-radius: 25px;
+    background-color: white;
+    margin: 20px auto;
+    width: 400px;
+    box-shadow: 2px 5px 20px grey;
+  }
+
+  @media (max-width: 500px) {
+    div.resultBMI {
+        width: 80%;
+    }
+}
+
+@media (max-width: 550px) {
+  #head {
+    height: 140px;
+  }
+}
+  
+  
