@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Development Job Application Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="title" class="title">Web Development Job Application Form</h1>
+    <p id="description" class="title">Please fill your information below</p>
+
+    <!-- The form below is the job recruitment -->
+
+    <form action="submit/index.html" id="survey-form" method="POST">
+      <label id="name-label" for="name" class="formname">Name:</label><br>
+      <input type="text" id="name" name="name" class="formtext" placeholder="Put your name here" autocomplete="off" required><br><br><br>
+      <label id="email-label" for="email" class="formname">E-mail:</label><br>
+      <input type="email" id="email" name="email" class="formtext" placeholder="Put your email here" autocomplete="off" required><br><br><br>
+      <label id="number-label" for="age" class="formname">Age: (Optional)</label><br>
+      <input type="number" id="number" name="age" class="formtext" max="80" min="15" placeholder="Put your age here"><br><br><br>
+      <label id="phone-label" for="phone" class="formname">Phone Number:</label> 
+      <input type="tel" id="phone" name="phone" class="formtext" autocomplete="off" placeholder="Put your phone number here" required><br><br><br>
+
+      <label for="position" class="formname">What position are you applying for?</label>
+      <select id="dropdown" class="formtext" name="position">
+        <option value="frontend">Front-End Developer</option>
+        <option value="backend">Back-End Developer</option>
+        <option value="fullstack">Full-Stack Developer</option>
+      </select><br><br>
+
+      <select id="dropdown" class="formtext" name="role">
+        <option value="parttime">Part-time </option>
+        <option value="fulltime">Full-time </option>
+        <option value="internship">Internship</option>
+        <option value="temporary">Temporary (3-month, 6-month, 1-year)</option>
+      </select><br><br><br>
+
+      <label for="introduction" class="formname">Introduction:</label><br>
+      <textarea id="introduction" name="introduction" class="input-textarea" placeholder="Introduce yourself here"></textarea><br><br>
+
+      <div id="uploadFile">
+        <label for="upload" class="formname">Upload your files here: (e.g. Resume, Transcript, Other documents)<br>
+          <input type="file" id="upload" name="upload" multiple/>
+        </label>
+      </div>
+
+      <div id="buttonSubmit">
+        <input type="submit" class="formsubmit">
+      </div>
+    </form>
+  </body>
+</html>
