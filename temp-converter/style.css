@@ -1,0 +1,178 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+* {
+  font-family: 'Montserrat';
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(167, 224, 255);
+}
+
+header {
+  background-color: rgb(0, 0, 112);
+  height: 100px;
+}
+
+header h1 {
+  color: rgb(120, 120, 160);
+  padding-top: 25px;
+}
+
+[type="radio"] {
+  display: none;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.converter {
+  border: 1px solid black;
+  padding: 30px 0;
+  width: 50%;
+  margin: 30px auto;
+}
+
+.converter p {
+  font-size: 24px;
+  padding: 15px 0;
+}
+
+.converter label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input#convertToFahrenheit, input#convertToCelsius {
+  padding: 5px;
+  width: 90px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid rgb(160,160,160);
+}
+
+#tempSelector {
+  display: inline-block;
+  font-size: 1.3em;
+  margin-top: 30px;
+}
+
+#fahrSelect {
+  background-color: lightblue;
+  padding: 5px 60px;
+  border: 2px solid darkblue;
+  border-radius: 25px 0 0 25px;
+  position: relative;
+  left: 20px;
+}
+
+
+#fahrenheit:checked + .fahrSelector, #celsius:checked + .celSelector {
+  background-color: darkblue;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+#tempSelector p {
+  display: inline;
+  position: relative;
+  right: 75px;
+  color: blue;
+  font-weight: bold;
+}
+
+#tempSelector p.fahrSelector {
+  left: -54px;
+  color: lightblue;
+  font-weight: normal;
+}
+
+#tempSelector p.celSelector {
+  left: -87px;
+}
+
+#celSelect {
+  background-color: lightblue;
+  border: 2px solid darkblue;
+  padding: 5px 60px;
+  border-radius: 0 25px 25px 0;
+  position: relative;
+  right: 8px;
+}
+
+.converter {
+  background-color: white;
+  width: 450px;
+  height: 250px;
+  box-shadow: 2px 5px 20px grey;
+  border: 1px solid white;
+  border-radius: 25px;
+}
+
+#formula {
+  height: 280px;
+}
+
+#formula p {
+  font-size: 1.2em;
+}
+
+button {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: rgb(80,120,255);
+  color: white;
+  transition: background-color 400ms;
+  box-shadow: 2px 4px 10px grey;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+button:hover {
+  background-color: darkblue;
+  transition: background-color 400ms;
+}
+
+#converterOfFahrenheit {
+  display: none;
+}
+
+#setResultOfFahrenheit, #setResultOfCelsius {
+  font-size: 30px;
+  margin-top: -10px;
+}
+
+@media (max-width: 600px) {
+    .converter {
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    .converter {
+        height: 300px;
+    }
+}
+
+#foot {
+  background-color: rgb(0, 0, 112);
+  color: rgb(120, 120, 160);
+  height: 50px;
+  padding: 25px;
+}
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Temperature Converter</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Temperature Converter</h1>
+    </header>  
+    <br>
+    <h2>Please enter the temperature to convert to.</h2>
+    <main>
+      <form>
+        <div id="tempSelector">
+
+          <!-- Buttons for selecting the degree to convert --> 
+
+          <label for="fahrenheit" class="pointer">
+            <input type="radio" name="temp" id="fahrenheit" onclick="selectModeFahr()" checked>
+            <span class="fahrSelector" id="fahrSelect"></span>
+            <p class="fahrSelector">&deg;F</p>
+          </label>
+          <label for="celsius" class="pointer">
+            <input type="radio" name="temp" id="celsius" onclick="selectModeCel()">
+            <span class="celSelector" id="celSelect"></span>
+            <p class="celSelector">&deg;C</p>
+          </label>
+        </div>
+
+        <!-- Convert Fahrenheit to Celsius -->
+
+        <div class="converter" id="converterOfCelsius">
+          <label for="convertToFahrenheit">Convert Celsius to Fahrenheit</label><br><br>
+          <input id="convertToFahrenheit" name="convertToFahrenheit"><br><br>
+          <button type="button" onclick="toFahrenheit()">Convert</button>
+          <button type="button" onclick="resetFahr()">Reset</button>
+          <div id="resultOfFahrenheit">
+            <p>Result</p>
+            <p id="setResultOfFahrenheit"></p>
+          </div>
+        </div>
+
+        <!-- Convert Celsius to Fahrenheit -->
+        
+          <div class="converter" id="converterOfFahrenheit">
+          <label for="convertToCelsius">Convert Fahrenheit to Celsius</label><br><br>
+          <input id="convertToCelsius" name="convertToCelsius"><br><br>
+            <button type="button" onclick="toCelsius()">Convert</button>
+            <button type="button" onclick="resetCel()">Reset</button>
+          <div id="resultOfCeisius">
+            <p>Result</p>
+            <p id="setResultOfCelsius"></p>
+          </div>
+        </div>
+      </form>
+      <div id="formula" class="converter">
+        <h2>Formula</h2>
+         <div id="celMethod">
+           <p><strong>How to convert from Celsius to Fahrenheit</strong></p>
+           <p>Celsius x (9 / 5) + 32</p>
+         </div>
+         <hr>
+         <div id="fahrMethod">
+           <p><strong>How to convert from Fahrenheit to Celsius</strong></p>
+           <p>(Fahrenheit - 32) x (5 / 9)</p>
+         </div>
+      </div>
+    </main>
+    <footer id="foot">
+      <p>The purpose of this page is for an experiment only.</p><br>
+      <p>Created by Suttirak</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
